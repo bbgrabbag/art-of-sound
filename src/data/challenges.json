@@ -1,7 +1,7 @@
 [{
-    "to": "/1",
+    "to": "/",
     "id": 1,
-    "title": "lorem ipsum",
+    "title": "Challenge 1",
     "instructions": [
       "lorem ipsum",
       "lorem ipsum",
@@ -12,7 +12,7 @@
   {
     "to": "/2",
     "id": 2,
-    "title": "lorem ipsum",
+    "title": "Challenge 2",
     "instructions": [
       "lorem ipsum",
       "lorem ipsum",
@@ -23,7 +23,7 @@
   {
     "to": "/3",
     "id": 3,
-    "title": "lorem ipsum",
+    "title": "Challenge 3",
     "instructions": [
       "lorem ipsum",
       "lorem ipsum",
@@ -34,7 +34,7 @@
   {
     "to": "/4",
     "id": 4,
-    "title": "lorem ipsum",
+    "title": "Challenge 4",
     "instructions": [
       "lorem ipsum",
       "lorem ipsum",
@@ -45,8 +45,20 @@
   {
     "to": "/5",
     "id": 5,
-    "title": "lorem ipsum",
+    "title": "Challenge 5",
     "instructions": [
+      "lorem ipsum",
+      "lorem ipsum",
+      "lorem ipsum",
+      "lorem ipsum",
+      "lorem ipsum",
+      "lorem ipsum",
+      "lorem ipsum",
+      "lorem ipsum",
+      "lorem ipsum",
+      "lorem ipsum",
+      "lorem ipsum",
+      "lorem ipsum",
       "lorem ipsum",
       "lorem ipsum",
       "lorem ipsum",
@@ -56,7 +68,7 @@
   {
     "to": "/6",
     "id": 6,
-    "title": "lorem ipsum",
+    "title": "Challenge 6",
     "instructions": [
       "lorem ipsum",
       "lorem ipsum",

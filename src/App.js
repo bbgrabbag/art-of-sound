@@ -2,6 +2,7 @@ import React from 'react'
 
 import {
   Grid,
+  Challenge,
   AppBar,
   CustomToolbar as Toolbar,
   Typography,
@@ -11,10 +12,17 @@ import {
   List,
   ListItem,
   ListItemText,
-  Link
+  Link,
+  Route,
+  Switch,
+  Divider,
+  AddCircle,
+  RemoveCircle,
+  Note
 } from './components/';
 
-import challenges from './challenges.json';
+import challenges from './data/challenges.json';
+import notes from './data/notes.json';
 
 import { useToggler } from './containers';
 
@@ -25,11 +33,13 @@ function App() {
       container
       direction="column">
       <Grid item>
-        <AppBar position='static'>
+        <AppBar
+          position='static'
+          color="secondary">
           <Toolbar>
             <Typography
               align="center"
-              variant='h4'>
+              variant='h5'>
               The Art of Sound
             </Typography>
             <IconButton onClick={toggle}>
@@ -43,12 +53,13 @@ function App() {
           anchor="right"
         >
           <List onClick={toggle}>
-            {challenges.map(link => (
+            {challenges.map(challenge => (
               <ListItem
+                key={challenge.id}
                 component={Link}
-                to={link.to}>
+                to={challenge.to}>
                 <ListItemText align="right">
-                  {`Challenge ${link.id}`}
+                  {`Challenge ${challenge.id}`}
                 </ListItemText>
               </ListItem>
             ))}
@@ -56,10 +67,60 @@ function App() {
         </Drawer>
       </Grid>
       <Grid item>
-
+        <Switch>
+          {challenges.map(challenge => {
+            return <Route
+              key={challenge.id}
+              exact
+              path={challenge.to}
+              render={() => {
+                return (
+                  <>
+                    <Typography
+                      variant='h6'
+                      align='right'>
+                      {challenge.title}
+                    </Typography>
+                    <Divider />
+                    <Challenge>
+                      {challenge.instructions.map((instruction, i) => {
+                        return (
+                          <ListItem key={i}>
+                            <ListItemText>
+                              {instruction}
+                            </ListItemText>
+                          </ListItem>
+                        )
+                      })}
+                    </Challenge>
+                  </>
+                )
+              }} />
+          })}
+        </Switch>
       </Grid>
-      <Grid item></Grid>
-
+      <Grid item>
+        <IconButton>
+          <AddCircle />
+        </IconButton>
+        <IconButton>
+          <RemoveCircle />
+        </IconButton>
+        <Typography inline variant='caption'>
+          Octave: 2
+        </Typography>
+        <Grid container>
+          {
+            notes.map(note => {
+              return (
+                <Grid key={note.id} item xs={4}>
+                  <Note color="secondary" variant="contained" className={note.color}>{''}</Note>
+                </Grid>
+              )
+            })
+          }
+        </Grid>
+      </Grid>
     </Grid>
   )
 }
