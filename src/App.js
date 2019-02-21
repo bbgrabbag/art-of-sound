@@ -18,16 +18,21 @@ import {
   Divider,
   AddCircle,
   RemoveCircle,
-  Note
+  Note,
+  MusicNote,
+  MusicOff
 } from './components/';
 
 import challenges from './data/challenges.json';
 import notes from './data/notes.json';
 
-import { useToggler } from './containers';
+import { useToggler, useAudio } from './containers';
 
 function App() {
-  const { on, toggle } = useToggler();
+  const [open, toggleMenu] = useToggler();
+  const [display, toggleNotes] = useToggler();
+  const [octave, handleOctave, start, stop] = useAudio();
+
   return (
     <Grid
       container
@@ -42,17 +47,17 @@ function App() {
               variant='h5'>
               The Art of Sound
             </Typography>
-            <IconButton onClick={toggle}>
+            <IconButton onClick={toggleMenu}>
               <Menu />
             </IconButton>
           </Toolbar>
         </AppBar>
         <Drawer
-          open={on}
-          onClose={toggle}
+          open={open}
+          onClose={toggleMenu}
           anchor="right"
         >
-          <List onClick={toggle}>
+          <List onClick={toggleMenu}>
             {challenges.map(challenge => (
               <ListItem
                 key={challenge.id}
@@ -100,21 +105,42 @@ function App() {
         </Switch>
       </Grid>
       <Grid item>
-        <IconButton>
+        <IconButton
+          onClick={handleOctave('up')}>
           <AddCircle />
         </IconButton>
-        <IconButton>
+        <Typography inline variant='caption'>
+          Octave: {octave}
+        </Typography>
+        <IconButton
+          onClick={handleOctave('down')}>
           <RemoveCircle />
         </IconButton>
-        <Typography inline variant='caption'>
-          Octave: 2
-        </Typography>
+        {
+          display ?
+            <IconButton onClick={toggleNotes}>
+              <MusicOff />
+            </IconButton> :
+            <IconButton onClick={toggleNotes}>
+              <MusicNote />
+            </IconButton>
+        }
+
         <Grid container>
           {
             notes.map(note => {
               return (
                 <Grid key={note.id} item xs={4}>
-                  <Note color="secondary" variant="contained" className={note.color}>{''}</Note>
+                  <Note
+                    color="secondary"
+                    variant="contained"
+                    className={note.color}
+                    onTouchStart={start(note.pitch)}
+                    onTouchEnd={stop}
+                    onMouseDown={start(note.pitch)}
+                    onMouseUp={stop}>
+                    {display && note.name}
+                  </Note>
                 </Grid>
               )
             })

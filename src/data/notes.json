@@ -1,61 +1,73 @@
 [{
     "pitch": 261.626,
     "id": 1,
+    "name": "C",
     "color": "green"
   },
   {
     "pitch": 277.183,
     "id": 2,
+    "name": "C#/Db",
     "color": "red"
   },
   {
     "pitch": 293.665,
     "id": 3,
+    "name": "D",
     "color": "yellow"
   },
   {
     "pitch": 311.127,
     "id": 4,
+    "name": "D#/Eb",
     "color": "blue"
   },
   {
     "pitch": 329.628,
     "id": 5,
+    "name": "E",
     "color": "green"
   },
   {
     "pitch": 349.228,
     "id": 6,
+    "name": "F",
     "color": "red"
   },
   {
     "pitch": 369.994,
     "id": 7,
+    "name": "F#/Gb",
     "color": "blue"
   },
   {
     "pitch": 391.995,
     "id": 8,
+    "name": "G",
     "color": "red"
   },
   {
     "pitch": 415.305,
     "id": 9,
+    "name": "G#/Ab",
     "color": "green"
   },
   {
     "pitch": 440,
     "id": 10,
+    "name": "A",
     "color": "yellow"
   },
   {
     "pitch": 466.164,
     "id": 11,
+    "name": "A#/Bb",
     "color": "blue"
   },
   {
     "pitch": 493.883,
     "id": 12,
+    "name": "B",
     "color": "red"
   }
 ]

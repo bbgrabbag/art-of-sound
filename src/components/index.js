@@ -9,6 +9,8 @@ import Typography from '@material-ui/core/Typography';
 import Menu from '@material-ui/icons/Menu';
 import AddCircle from '@material-ui/icons/AddCircle';
 import RemoveCircle from '@material-ui/icons/RemoveCircle';
+import MusicNote from '@material-ui/icons/MusicNote';
+import MusicOff from '@material-ui/icons/MusicOff';
 import Drawer from '@material-ui/core/Drawer';
 import IconButton from '@material-ui/core/IconButton';
 import List from '@material-ui/core/List';
@@ -27,6 +29,8 @@ const Challenge = withStyles(styles.challenge)(List);
 export {
   Challenge,
   Note,
+  MusicNote,
+  MusicOff,
   Divider,
   Grid,
   AppBar,
