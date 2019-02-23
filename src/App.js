@@ -123,10 +123,6 @@ function App() {
               <MusicNote />
             </IconButton>
         }
-        <Typography inline variant='caption'>
-          Press and HOLD
-        </Typography>
-
         <Grid container>
           {
             notes.map(note => {
@@ -146,6 +142,11 @@ function App() {
               )
             })
           }
+          <Grid item xs={12}>
+            <Typography align='center' variant='caption'>
+              Press and HOLD
+            </Typography>
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
