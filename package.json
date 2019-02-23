@@ -15,7 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && mv ./build/index.html ./build/200.html && surge build"
+    "deploy": "git add -A && git commit -m \"ready to deploy\" && git push && npm run build && mv ./build/index.html ./build/200.html && surge build"
   },
   "eslintConfig": {
     "extends": "react-app"

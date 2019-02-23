@@ -5,10 +5,10 @@
     "instructions": [
       "Tune the lowest string to an E (octave 4)",
       "Tune the next string to an A (octave 4)",
-      "Tune the next string to a D (octave 4)",
-      "Tune the next string to a G (octave 4)",
-      "Tune the next string to a B (octave 4)",
-      "Tune the highest string to an E (octave 5)"
+      "Tune the next string to a D (octave 5)",
+      "Tune the next string to a G (octave 5)",
+      "Tune the next string to a B (octave 5)",
+      "Tune the highest string to an E (octave 6)"
     ]
   },
   {
