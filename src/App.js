@@ -124,7 +124,7 @@ function App() {
             </IconButton>
         }
         <Typography inline variant='caption'>
-          Press and HOLD any button to produce the corresponding pitch
+          Press and HOLD
         </Typography>
 
         <Grid container>
