@@ -8,7 +8,7 @@ const useToggler = () => {
 }
 
 const useAudio = () => {
-  const [octave, setOctave] = useState(2);
+  const [octave, setOctave] = useState(4);
 
   const handleOctave = direction => e => {
     switch (direction) {
@@ -24,7 +24,8 @@ const useAudio = () => {
     }
   }
 
-  const audio = new AudioContext();
+  const audio = window.AudioContext ? new AudioContext() : new window.webkitAudioContext()
+
   let oscillator;
 
   const oscillate = freq => {
