@@ -29,8 +29,8 @@ import notes from './data/notes.json';
 import { useToggler, useAudio } from './containers';
 
 function App() {
-  const [open, toggleMenu] = useToggler();
-  const [display, toggleNotes] = useToggler();
+  const [open, toggleMenu] = useToggler(false);
+  const [display, toggleNotes] = useToggler(true);
   const [octave, handleOctave, start, stop] = useAudio();
 
   return (
@@ -83,7 +83,7 @@ function App() {
                   <>
                     <Typography
                       variant='h6'
-                      align='right'>
+                      align='center'>
                       {challenge.title}
                     </Typography>
                     <Divider />
