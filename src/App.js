@@ -91,9 +91,7 @@ function App() {
                       {challenge.instructions.map((instruction, i) => {
                         return (
                           <ListItem key={i}>
-                            <ListItemText>
-                              {instruction}
-                            </ListItemText>
+                            <ListItemText primary={instruction} />
                           </ListItem>
                         )
                       })}
