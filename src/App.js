@@ -123,6 +123,9 @@ function App() {
               <MusicNote />
             </IconButton>
         }
+        <Typography inline variant='caption'>
+          Press and HOLD any button to produce the corresponding pitch
+        </Typography>
 
         <Grid container>
           {
