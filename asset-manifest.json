@@ -1,11 +1,11 @@
 {
-  "main.js": "/static/js/main.8e9e9fcf.chunk.js",
-  "main.js.map": "/static/js/main.8e9e9fcf.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.fdfcfda2.js",
-  "runtime~main.js.map": "/static/js/runtime~main.fdfcfda2.js.map",
-  "static/js/2.103e05a0.chunk.js": "/static/js/2.103e05a0.chunk.js",
-  "static/js/2.103e05a0.chunk.js.map": "/static/js/2.103e05a0.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.9c9429b30436d51e112872621b955a72.js": "/precache-manifest.9c9429b30436d51e112872621b955a72.js",
-  "service-worker.js": "/service-worker.js"
+  "main.js": "/art-of-sound/static/js/main.8e9e9fcf.chunk.js",
+  "main.js.map": "/art-of-sound/static/js/main.8e9e9fcf.chunk.js.map",
+  "runtime~main.js": "/art-of-sound/static/js/runtime~main.5365b044.js",
+  "runtime~main.js.map": "/art-of-sound/static/js/runtime~main.5365b044.js.map",
+  "static/js/2.103e05a0.chunk.js": "/art-of-sound/static/js/2.103e05a0.chunk.js",
+  "static/js/2.103e05a0.chunk.js.map": "/art-of-sound/static/js/2.103e05a0.chunk.js.map",
+  "index.html": "/art-of-sound/index.html",
+  "precache-manifest.0cae11ba98e106d5d50153e35e5d8891.js": "/art-of-sound/precache-manifest.0cae11ba98e106d5d50153e35e5d8891.js",
+  "service-worker.js": "/art-of-sound/service-worker.js"
 }
