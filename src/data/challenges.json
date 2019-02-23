@@ -3,12 +3,12 @@
     "id": 1,
     "title": "Challenge 1 - Guitar Tuning",
     "instructions": [
-      "Tune the lowest string to an E4",
-      "Tune the next string to an A4",
-      "Tune the next string to a D4",
-      "Tune the next string to a G4",
-      "Tune the next string to a B4",
-      "Tune the highest string to an E5"
+      "Tune the lowest string to an E (octave 4)",
+      "Tune the next string to an A (octave 4)",
+      "Tune the next string to a D (octave 4)",
+      "Tune the next string to a G (octave 4)",
+      "Tune the next string to a B (octave 4)",
+      "Tune the highest string to an E (octave 5)"
     ]
   },
   {
@@ -17,7 +17,7 @@
     "title": "Challenge 2 - Matching Pitches",
     "instructions": [
       "Pick a partner",
-      "Using the app, produce a C6. Have your partner try to find the pitch by ear on the guitar",
+      "Using the app, produce a C (octave 6). Have your partner try to find the pitch by ear on the guitar",
       "Switch with your partner and repeat the above step",
       "Pick any note on the guitar and have your partner match the pitch using the app",
       "Switch with your partner and repeat the above step",
@@ -29,7 +29,7 @@
     "id": 3,
     "title": "Challenge 3 - Simple Melodies",
     "instructions": [
-      "Pick a simple song/lullaby such as 'Happy Birthday' or 'Twinkle Twinkle",
+      "Pick a simple song/lullaby such as 'Happy Birthday' or 'Twinkle Twinkle'",
       "Hum it out loud with a partner",
       "Try to figure out the STARTING note by ear using either a guitar or the app",
       "Once you've found the starting note, see how much of the rest of the song you can pluck out by ear"
@@ -38,25 +38,25 @@
   {
     "to": "/4",
     "id": 4,
-    "title": "Challenge 4 - Favorite Song",
-    "instructions": [
-      "Find your favorite song on iTunes/Spotify/etc.",
-      "Play your favorite part/melody out loud from your phone speakers",
-      "Hum it out loud",
-      "Try to figure out the STARTING note by ear using either a guitar or the app",
-      "Once you've found the starting note, see if you can pluck the rest out by ear"
-    ]
-  },
-  {
-    "to": "/5",
-    "id": 5,
-    "title": "Challenge 5 - Call and Response",
+    "title": "Challenge 4 - Call and Response",
     "instructions": [
       "Play three notes in a row of your choice on the app, and have your partner try to play them back using the guitar",
       "Switch with your partner and try again",
       "Whoever has the guitar should pluck out any three notes in a row and the other should find them by ear on the app",
       "Switch with your partner and try again",
       "Take turns challenging each other to play different notes and play them back"
+    ]
+  },
+  {
+    "to": "/5",
+    "id": 5,
+    "title": "Challenge 5 - Favorite Song",
+    "instructions": [
+      "Find your favorite song on iTunes/Spotify/etc.",
+      "Play your favorite part/melody out loud from your phone speakers",
+      "Hum it out loud",
+      "Try to figure out the STARTING note by ear using either a guitar or the app",
+      "Once you've found the STARTING note, see if you can pluck the rest out by ear"
     ]
   }
 ]
