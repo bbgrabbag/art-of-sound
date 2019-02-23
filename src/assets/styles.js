@@ -12,6 +12,7 @@ export default {
   },
   note: {
     root: {
+      textTransform: 'none',
       width: '95%',
       height: '48px',
       margin: '2px'
